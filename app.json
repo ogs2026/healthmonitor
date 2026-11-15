@@ -1,24 +1,59 @@
 {
   "expo": {
-    "name": "space-health-monitor",
-    "slug": "space-health-monitor",
+    "name": "Hubble Health",
+    "slug": "hubble-health",
+    "scheme": "hubblehealth",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#071426",
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.hubblehealth.app",
+      "supportsTablet": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.hubblehealth.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#071426",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "name": "Hubble Health",
+      "shortName": "Hubble Health",
+      "themeColor": "#071426",
+      "backgroundColor": "#071426"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Hubble Health uses your photo library so you can attach dated photos of skin or symptom changes and compare them over time. Photos stay on this device.",
+          "cameraPermission": "Hubble Health uses the camera so you can take dated photos of skin or symptom changes and compare them over time. Photos stay on this device.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#071426"
+        }
+      ],
+      "expo-file-system"
+    ]
   }
 }
