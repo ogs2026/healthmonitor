@@ -282,7 +282,7 @@ var TodayScreen = function(props) {
       contentContainerStyle: { paddingTop: insets.top + 16, paddingHorizontal: 16, paddingBottom: TAB_MENU_HEIGHT + insets.bottom + SCROLL_EXTRA_PADDING },
       componentId: 'today-scroll'
     },
-      React.createElement(Text, { style: styles.title, componentId: 'today-title' }, 'Hubble Health'),
+      React.createElement(Text, { style: styles.title, componentId: 'today-title' }, 'Hubble Health Monitor'),
       React.createElement(Text, { style: styles.secondary, componentId: 'today-date' }, 'Your Health. Your Mission. Your Future. · ' + dateLine(profile)),
       React.createElement(TouchableOpacity, { style: [styles.envCard, { marginTop: 16 }], activeOpacity: 0.7, onPress: function() { props.navigation.navigate('Profile'); }, componentId: 'today-environment' },
         React.createElement(Ionicons, { name: 'planet-outline', size: 22, color: highlightColor }),

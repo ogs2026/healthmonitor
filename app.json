@@ -30,7 +30,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png",
-      "name": "Hubble Health",
+      "name": "Hubble Health Monitor",
       "shortName": "Hubble Health",
       "themeColor": "#071426",
       "backgroundColor": "#071426"
