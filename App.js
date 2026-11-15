@@ -14,7 +14,7 @@ export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
-        <NavigationContainer theme={navigationTheme} documentTitle={{ formatter: () => 'Hubble Health Monitor' }}>
+        <NavigationContainer theme={navigationTheme} documentTitle={{ formatter: () => 'Hubble Health' }}>
           <HealthMonitor />
         </NavigationContainer>
       </SafeAreaProvider>
